@@ -1,4 +1,4 @@
-# FluentPython
+# FluentPython Study 
 
 * Purpose of this study : To code Pythonically
 
