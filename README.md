@@ -1,8 +1,8 @@
 # FluentPython
 
-### Purpose of study : To code Pythonically
+* Purpose of this study : To code Pythonically
 
-### Upload routine : Upload every Sunday
+* Upload routine : Upload every Sunday
 
 
-~~plz do no zaksimsamil....~~
+~~plz do not zaksimsamil....~~
