@@ -7,7 +7,7 @@
 		<div style="text-align:center"><em>img source : "https://realpython.com/python3-object-oriented-programming/"</em></div>
 </p>
 
-## 1. Special method (특별 메소드)
+## Chap1. Special method (특별 메소드)
 > 특별 메소드를 적절히 사용해 클래스를 만들면 이 클래스가 build-in object(내장형 객체)가 되어 build-in function(내장 함수)을 사용할 수 있다는 장점이 있다.   
 > 따라서 특별 메소드는 *pythonic*하게 코딩하기 위해 친숙해져야 하는 개념이다. 
 
