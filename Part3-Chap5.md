@@ -2,7 +2,7 @@
 > 현재 Fluent Python 을 공부하고, 파트별로 핵심 내용을 정리하고 있다.   
 > 오늘은 세번째 파트인 (first-class function)일급 객체로서의 함수에 대해 알아본다. 
 
-## Chapter1: First-class function (일급 함수)
+## Chapter5: First-class function (일급 함수)
 
 > 파이썬 함수는 일급 객체의 특징을 갖고 있다. 일급 객체의 특징으로는 변수에 할당 가능하며 함수의 인자로 전달이 가능하며 함수의 결과로 반환 가능하다는 점이 있다. 이번 장에서는 함수의 콜러블(callable) 특징, 함수의 속성(atttribute), 함수의 매개 변수 (parameters), 함수 애너테이션 (annotation), 그리고 내장 함수를 이용해 함수형 프로그래밍을 하는 방법을 알아본다. 
 
