@@ -19,7 +19,7 @@
     * 전략 (strategy) : 여러 알고리즘이 구현하는 컴포넌트의 공통 인터페이스 (추상 클래스)
     * 구체적인 전략 : 전략의 서브 클래스 중 하나
     
-![img](./chap6-uml.png)
+![img](assets/chap6-uml.png)
 
 
 ```python
