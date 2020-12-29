@@ -780,9 +780,58 @@ if __name__=="__main__":
 
 * (1) : `locals()`는 이 함수가 호출된 메서드에서 정의된 모든 지역 변수를 딕셔너리 객체로 반환함. 따라서 format의 인수에 `**locals()`를 사용하면 지역 변수를 참조할 수 있음
 
+### example of using decorator
+* singleton : 오직 하나의 객체만 생성하는 클래스 (a class with only one instance)
+
+
+```python
+import functools
+
+def singleton(cls):
+    """make a class a Singleton class (only one instance)"""
+    @functools.wraps(cls)
+    def wrapper_singleton(*args, **kwargs):
+        if not wrapper_singleton.instance:
+            wrapper_singleton.instance = cls(*args, **kwargs) # (1)
+        return wrapper_singleton.instance
+    wrapper_singleton.instance = None # (2)
+    return wrapper_singleton
+
+
+@singleton
+class TheOne:
+    pass
+```
+
+* (1) 속성(instance) 값에 클래스의 첫번째 객체를 할당 (storing the first instace of the class as an attribute)
+* (2) 클래스의 속성(instance)을 생성
+
+
+```python
+first_one = TheOne()
+another_one = TheOne()
+
+print(id(first_one))
+print(id(another_one))
+
+first_one is another_one # 완전히 똑같은 객체
+```
+
+    139731388666544
+    139731388666544
+
+
+
+
+
+    True
+
+
+
 ##### etc : words definition
 * signature(시그니처) : 함수나 메소드의 입력값(parameter)과 값의 자료형 또는 출력값과 값의 자료형
 * abstract(추상화) : 공통적으로 사용하는 기능과 속성을 클래스나 함수로 묶어 이름을 붙임. 추상화된 클래스나 함수를 객체로 만들 수 없는데, 그 이유는 추상 클래스 또는 함수의 기능이 객체가 되기에는 너무 추상적으로 구현되어 있기 때문. 따라서 추상 클래스를 상속 받거나 추상 함수로 데커레이트 한 함수를 생성해 기능을 구체화한 후 객체를 생성해야 함
 
 ##### advanced contents 
 * [how you implemented your python decorator is wrong](https://github.com/GrahamDumpleton/wrapt/blob/develop/blog/01-how-you-implemented-your-python-decorator-is-wrong.md)
+* [more practical examples of using decorator in python](https://realpython.com/primer-on-python-decorators/#a-few-real-world-examples)
