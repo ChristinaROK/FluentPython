@@ -784,7 +784,5 @@ if __name__=="__main__":
 * signature(시그니처) : 함수나 메소드의 입력값(parameter)과 값의 자료형 또는 출력값과 값의 자료형
 * abstract(추상화) : 공통적으로 사용하는 기능과 속성을 클래스나 함수로 묶어 이름을 붙임. 추상화된 클래스나 함수를 객체로 만들 수 없는데, 그 이유는 추상 클래스 또는 함수의 기능이 객체가 되기에는 너무 추상적으로 구현되어 있기 때문. 따라서 추상 클래스를 상속 받거나 추상 함수로 데커레이트 한 함수를 생성해 기능을 구체화한 후 객체를 생성해야 함
 
-
-```python
-
-```
+##### advanced contents 
+* [how you implemented your python decorator is wrong](https://github.com/GrahamDumpleton/wrapt/blob/develop/blog/01-how-you-implemented-your-python-decorator-is-wrong.md)
